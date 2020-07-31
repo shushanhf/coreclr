@@ -549,7 +549,7 @@ def generateLttngFiles(etwmanifest,eventprovider_directory, dryRun):
 
 extern "C" bool XplatEventLoggerIsEnabled();
 
-#define tracepoint_enabled(provider, name) XplatEventLoggerIsEnabled()
+#define tracepoint_enabled(provider, name) FALSE
 #define do_tracepoint tracepoint
 #endif
 
